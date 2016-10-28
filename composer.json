@@ -1,0 +1,52 @@
+{
+  "name": "tourze/server-yii2",
+  "description": "Server模块，适应Yii2",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "tourze",
+      "email": "dev@tourze.com"
+    }
+  ],
+  "require": {
+    "blink/blink": "*",
+    "yiisoft/yii2": "^2.0",
+    "yiisoft/yii2-bootstrap": "^2.0",
+    "yiisoft/yii2-swiftmailer": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.0",
+    "yiisoft/yii2-codeception": "^2.0",
+    "yiisoft/yii2-debug": "^2.0",
+    "yiisoft/yii2-gii": "^2.0"
+  },
+  "autoload": {
+    "files": [
+      "bootstrap.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "tourze\\ServerYii2\\": "tests/"
+    },
+    "files": [
+      "bootstrap-dev.php"
+    ]
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
